@@ -27,7 +27,7 @@ def process_song_data(spark, input_data, output_data):
     song_data = input_data + "song_data/A/A/A/*.json"
     
     # read song data file
-    print('Input song data json file read started')
+    print('Input song data json file read started \n')
     df = spark.read.json(song_data,mode='PERMISSIVE', columnNameOfCorruptRecord='corrupt_record')
     print('Input song data json file read completed')
     

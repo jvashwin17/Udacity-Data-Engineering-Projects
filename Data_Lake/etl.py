@@ -24,7 +24,7 @@ def create_spark_session():
 
 def process_song_data(spark, input_data, output_data):
     # get filepath to song data file
-    song_data = input + "song_data/A/A/A/*.json"
+    song_data = input_data + "song_data/A/A/A/*.json"
     
     # read song data file
     print('Input song data json file read started')
@@ -54,7 +54,7 @@ def process_song_data(spark, input_data, output_data):
 
 def process_log_data(spark, input_data, output_data):
     # get filepath to log data file
-    log_data = input + "log-data/*/*/*.json"
+    log_data = input_data + "log-data/*/*/*.json"
 
     # read log data file
     print('Input log data json file read started')
